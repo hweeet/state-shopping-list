@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  border: mediumblue 1px solid;
+}
+
+header {
+  background-color: mediumblue;
+  font-size:30px;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.inputBox2 {
+  width: 485px;
+  height: 40px;
+  margin: 4px;
+}
+
+.inputBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.inputBox input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+.searchForm {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .searchForm input[type='text'] {
+    flex-grow: 1;
+    max-width: calc(100% - 50px);
+    min-height: 48px;
+    font-size: 1rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    margin-right: 0.25rem;
+    outline: none;
+  }
+
+
+button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color:mediumblue;
+}
+
+button:hover {
+  background-color: limegreen;
+  cursor: pointer;
+  color: white;
+}
+
+footer {
+  background-color: mediumblue;
+  font-size: 23px;
+  height: 5rem;
+  width: 100%;
+  padding:0.25rem;
+  display: grid;
+  place-content: center;
+  color:aliceblue;
+  }
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 0.25rem 0.25rem;
+}
+
+ul li::before {
+  content: "\200B";
+}
+
+.item {
+  display: flex;
+  background-color: #eee;
+  justify-content: flex-start;
+  align-items:center;
+  padding: 0.5rem 0 0.25rem 0.25rem;
+  margin: 0.25rem 0;
+}
+
+.item input[type="checkbox"] {
+  text-align: center;
+  width: 2.5rem;
+  width: 48px;
+  min-width:48px;
+  height: 2.5rem;
+  height:48px;
+  min-height: 48px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+.item svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+
+}
+
+.item svg:hover,
+.item svg:focus {
+  color: red;
+  outline: none;
+}
